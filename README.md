@@ -1,70 +1,43 @@
-# Tidy-Folder
+# tidy-folder
 
-A Python script to automatically organise files in a folder into categories such as **Documents**, **Images**, **Videos**, **Code**, and **Others**.
+A Python script that automatically organises files in a folder into categories such as **Documents**, **Images**, **Videos**, **Code**, and **Others**.
 
 ---
 
 ## Features
 
-- Automatically moves files into folders based on file type
-- Safely handles filename conflicts by renaming duplicates
-- Undo to revert previous move
-- Creates missing folders automatically
-- Allows more filetypes and folder categories to be added
+- Sorts files into folders based on file type  
+- Prevents filename conflicts by renaming duplicates  
+- Undo functionality to revert moves  
+- Automatically creates folders when needed  
+- You can add or remove file types by editing `file_categories.py`
+  
+## Installation / Getting Started
 
----
-
-## File Categories
-
-The default categories are defined in `file_categories.py`:
-
-```python
-FILE_CATEGORIES = {
-    "Images": [
-        ".jpg", ".jpeg", ".png", ".gif", ".webp", ".bmp",
-        ".svg", ".tiff", ".heic", ".ico"
-    ],
-    "Documents": [
-        ".pdf", ".txt", ".doc", ".docx", ".rtf", ".odt",
-```
-etc.
-
-You can easily add or remove file types to fit your needs.
-
----
-
-## Getting Started
-
-### Requirements
-
-- Python 3.8 or higher
-
-### Installation
-
-1. **Clone the repository** (recommended):
+### Option 1: Using Git (recommended)
+If you have Git installed, run the following in your terminal:
 
 ```bash
 git clone https://github.com/daniel-turczy/tidy-folder.git
 cd tidy-folder
 ```
 
-Or **Download ZIP** from GitHub and extract it.
+### Option 2: Without Git 
+1. Click **Code → Download ZIP** on GitHub.  
+2. Extract the ZIP to a folder of your choice (for example, `C:\Users\Daniel\Downloads\tidy-folder`).  
+3. Open a terminal (PowerShell or CMD on Windows, Terminal on macOS/Linux).  
+4. Navigate to the folder where you extracted the files using `cd`.
 
----
-
-## Run the script
+### Running the script
+Once you are in the project folder, run:
 
 ```bash
 python tidy_folder.py
 ```
 
-Follow the prompts to enter the folder you want to organise.
+## Example Usage
 
----
-
-## Usage Example
-
-```text
+```
 Enter the path to the folder you want to organise (q to quit):
 > C:\Users\Daniel\Downloads\Test
 
@@ -75,9 +48,8 @@ Type 'u' to undo this move or press ENTER to continue:
 
 After running, your folder might look like:
 
-```text
+```
 TestFolder/
-│
 ├── Documents/
 │   └── report.pdf
 ├── Images/
@@ -88,20 +60,13 @@ TestFolder/
     └── random.dat
 ```
 
-## Undo Moves
-
-If you make a mistake or want to revert changes, the script can undo the last move using the built-in undo feature. Simply type `u` when prompted.
-
----
-
-## License
-
-This project is licensed under the **MIT License**. See [LICENSE](LICENSE) for details.
-
----
+Type `u` when prompted if you want to undo the move.
 
 ## Notes
 
-- Only files in the specified folder are organised; subfolders are ignored.  
-- Files with unknown extensions are moved to the **Others** folder.  
-- Works on Windows, macOS, and Linux (Python 3.8+).
+- Requires Python 3.6+
+- Works on Windows, macOS, and Linux
+- Undo can only go back by one move (for now...)
+
+## License
+MIT License — see [LICENSE](LICENSE).
