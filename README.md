@@ -42,8 +42,9 @@ Enter the path to the folder you want to organise (q to quit):
 > C:\Users\Daniel\Downloads\Test
 
 Folder organised successfully!
-Type 'u' to undo this move or press ENTER to continue:
->
+Type 'u' to undo this move,
+'a' to undo ALL moves this session,
+or press ENTER to continue: 
 ```
 
 After running, your folder might look like:
