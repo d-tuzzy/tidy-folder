@@ -24,7 +24,7 @@ cd tidy-folder
 
 ### Option 2: Without Git 
 1. Click **Code → Download ZIP** on GitHub.  
-2. Extract the ZIP to a folder of your choice (for example, `C:\Users\Daniel\Downloads\tidy-folder`).  
+2. Extract the ZIP to a folder of your choice (for example, `C:\Users\Dan\Downloads\tidy-folder`).  
 3. Open a terminal (PowerShell or CMD on Windows, Terminal on macOS/Linux).  
 4. Navigate to the folder where you extracted the files using `cd`.
 
