@@ -18,7 +18,7 @@ A Python script that automatically organises files in a folder into categories s
 If you have Git installed, run the following in your terminal:
 
 ```bash
-git clone https://github.com/daniel-turczy/tidy-folder.git
+git clone https://github.com/d-tuzzy/tidy-folder.git
 cd tidy-folder
 ```
 
