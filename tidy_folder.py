@@ -109,11 +109,13 @@ if __name__ == "__main__":
                 undo = input("\nType 'u' to undo this move,\n'a' to undo ALL moves this session,\nor press ENTER to continue: ")
                 if undo.lower() == "u":
                     undo_moves(moved_files)
+
                 elif undo.lower() == "a":
                     confirm = input("Are you sure you want to undo all moves? (y/n): ")
                     if confirm.lower() == "y":
                         undo_moves(session_moves.copy()) # Prevents list being affected during undo
                         session_moves.clear() # Reset session history
+                        
                 elif undo != "":
                     print("You could've just hit ENTER but ok...")
             else:
