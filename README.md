@@ -6,13 +6,14 @@ A Python script that automatically organises files in a folder into categories s
 
 ## Features
 
-- Sorts files into folders based on file type  
+- Sorts files into folders based on file type
+- GUI and CLI versions available
 - Prevents filename conflicts by renaming duplicates  
 - Undo functionality to revert moves  
 - Automatically creates folders when needed  
 - You can add or remove file types by editing `file_categories.py`
   
-## Installation / Getting Started
+## Installation
 
 ### Option 1: Using Git (recommended)
 If you have Git installed, run the following in your terminal:
@@ -26,16 +27,16 @@ cd tidy-folder
 1. Click **Code → Download ZIP** on GitHub.  
 2. Extract the ZIP to a folder of your choice (for example, `C:\Users\Dan\Downloads\tidy-folder`).  
 3. Open a terminal (PowerShell or CMD on Windows, Terminal on macOS/Linux).  
-4. Navigate to the folder where you extracted the files using `cd`.
+4. Navigate to the folder where you extracted the files.
 
-### Running the script
+## CLI Version
 Once you are in the project folder, run:
 
 ```bash
 python tidy_folder.py
 ```
 
-## Example Usage
+### Example Usage
 
 ```
 Enter the path to the folder you want to organise (q to quit):
@@ -47,7 +48,21 @@ Type 'u' to undo this move,
 or press ENTER to continue: 
 ```
 
-After running, your folder might look like:
+Type `u` when prompted if you want to undo the move.
+Type `a` if you want to undo all moves in the session.
+
+## GUI Version
+Once you are in the project folder, run:
+
+```bash
+python gui.py
+```
+
+### Example Usage
+
+![no image :/](assets/demo.png)
+
+After running either version, your folder might look like:
 
 ```
 TestFolder/
@@ -60,10 +75,6 @@ TestFolder/
 └── Others/
     └── random.dat
 ```
-
-Type `u` when prompted if you want to undo the move.
-Type `a` if you want to undo all moves in the session.
-
 ## Notes
 
 - Requires Python 3.6+
