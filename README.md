@@ -58,6 +58,8 @@ Once you are in the project folder, run:
 python gui.py
 ```
 
+To modify the background and title colours, open `gui.py` and edit the values for title_colour and bg_colour on lines 5 and 6.
+
 ### Example Usage
 
 ![no image :/](assets/demo.png)
