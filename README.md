@@ -48,9 +48,6 @@ Type 'u' to undo this move,
 or press ENTER to continue: 
 ```
 
-Type `u` when prompted if you want to undo the move.
-Type `a` if you want to undo all moves in the session.
-
 ## GUI Version
 Once you are in the project folder, run:
 
