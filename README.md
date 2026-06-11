@@ -78,6 +78,7 @@ TestFolder/
 
 - Requires Python 3.6+
 - Works on Windows, macOS, and Linux
+- The 'undo all' feature only reverts the moves done in the current session
 
 ## License
 MIT License — see [LICENSE](LICENSE).
